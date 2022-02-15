@@ -1,0 +1,21 @@
+.vscode/*
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Built files
+*.exe
+*.o
+*.out
+*.i
+*.ii
+*.s
+*.asm
+
+# Makefile
+Makefile.win
+makefile.win
+
+# project_specific
+.github/
