@@ -40,5 +40,17 @@ int main(int argc, char const *argv[], char *envp[])
     assert(get_one(array, -1, length).id_ == 5);
     assert(!strcmp(get_one(array, -1, length).name_, "Echo"));
 
+    erase_one(array, 1, &length);
+
+    assert(get_one(array, 1, length).id_ == 2);
+    assert(!strcmp(get_one(array, 1, length).name_, "Bravo"));
+
+    erase_one(array, 10, &length);
+
+    assert(get_one(array, -1, length).id_ == 3);
+    assert(!strcmp(get_one(array, -1, length).name_, "Charlie"));
+
+    print(array, length);
+
     clear(array, &length);
 }
